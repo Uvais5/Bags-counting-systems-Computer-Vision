@@ -37,7 +37,7 @@ Ensure you have Python 3.8+ installed.
 
 3. **Run the Script:**
    ```bash
-   python count_sacks.py
+   python count.py
    ```
    The model will automatically download `yolov8m-worldv2.pt` on the first run. The script will output its progress frame-by-frame.
 
