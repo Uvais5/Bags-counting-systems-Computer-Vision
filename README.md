@@ -2,6 +2,11 @@
 
 This project analyzes video footage of workers moving gunny/jute sacks from trucks to warehouses and automatically tracks and counts the number of sacks. It outputs a new video file with bounded boxes, tracked movement lines, and a cumulative object counter.
 
+---
+ <img src="output.png" alt="Watch Dual Chatbot System: Personal Assistant + Data Expert Demo" width="640">
+---
+
+
 ## Approach & Technology
 To achieve accurate object counting without needing a massive custom-labeled dataset of "sacks", this script utilizes **[YOLO-World](https://docs.ultralytics.com/models/yolo-world/)** by Ultralytics. 
 YOLO-World is an open-vocabulary, zero-shot object detection model. It allows us to supply descriptive text prompts (e.g., `"sack", "gunny sack", "jute sack"`) instead of integer class IDs, and the model attempts to find objects matching that description out-of-the-box.
